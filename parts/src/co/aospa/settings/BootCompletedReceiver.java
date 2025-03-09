@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings;
+package co.aospa.xiaomiparts;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -23,8 +23,8 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.util.Log;
 
-import org.lineageos.settings.dirac.DiracUtils;
-import org.lineageos.settings.thermal.ThermalUtils;
+import co.aospa.xiaomiparts.dirac.DiracUtils;
+import co.aospa.xiaomiparts.thermal.ThermalUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
 
