@@ -78,3 +78,14 @@ sh_binary {
     src: "init.qcom.sh",
     vendor: true,
 }
+
+cc_library_static {
+    name: "init_beryllium",
+    recovery_available: true,
+    shared_libs: ["libbase"],
+    srcs: ["init_beryllium.cpp"],
+    include_dirs: [
+        "system/core/init",
+        "system/libbase/include"
+    ]
+}

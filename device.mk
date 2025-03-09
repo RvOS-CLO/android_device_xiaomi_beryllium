@@ -121,7 +121,6 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.bluetooth.a2dp_offload.supported=true
 
 PRODUCT_VENDOR_PROPERTIES += \
-    bluetooth.device.default_name=Xiaomi Pocophone F1 \
     bluetooth.hardware.power.operating_voltage_mv=3300 \
     bluetooth.profile.bas.client.enabled?=true \
     persist.bluetooth.a2dp_offload.disabled=false \
@@ -508,10 +507,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Treble
 PRODUCT_USE_VNDK_OVERRIDE := true
-
-# USB
-PRODUCT_VENDOR_PROPERTIES += \
-    vendor.usb.product_string=Xiaomi Pocophone F1
 
 # Vendor blobs
 $(call inherit-product, vendor/xiaomi/beryllium/beryllium-vendor.mk)
